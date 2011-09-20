@@ -8,14 +8,19 @@ Jaimie Murdock.
 
 Files
 --------
-HK.hs           Defines the HaskellKanren Language
-HKPreludeo.hs   Defines an environment for using HaskellKanren
-HKTests.hs      Defines a suite of test cases
-Examples.hs     Collection of examples using HKPreludeo
+HK.hs
+    Defines the HaskellKanren Language
+HKPreludeo.hs   
+    Defines an environment for using HaskellKanren
+HKTests.hs      
+    Defines a suite of test cases
+Examples.hs
+    Collection of examples using HKPreludeo
 
 Dependencies
 -----------------
-logict          http://hackage.haskell.org/package/logict 
+logict
+    http://hackage.haskell.org/package/logict 
 
 Documentation
 -----------------
@@ -54,6 +59,8 @@ binding.
 
 URLs
 ------------
-GitHub      http://github.com/JaimieMurdock/HaskellKanren
-Hackage     http://hackage.haskell.org/package/haskellkanren
+GitHub      
+    http://github.com/JaimieMurdock/HK
+Hackage 
+    http://hackage.haskell.org/package/hk
 
