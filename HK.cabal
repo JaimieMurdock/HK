@@ -1,0 +1,18 @@
+Name:               HK
+Version:            0.1.0
+Description:        Implementation of the Kanren programming language in
+                    Haskell, utilizing monadic computations to control
+                    backtracking with fair disjunction.
+Synopsis:           Implementation of the Kanren logic system.
+Author:             Carlo Angiuli, Adam Foltzer, and Jaimie Murdock
+Maintainer:         Jaimie Murdock
+Homepage:           http://github.com/JaimieMurdock/HK
+
+Stability:          Experimental
+Tested-With:        GHC
+Build-Depends:      base >= 2, logict >= 0.5.0
+Build-Type:         Simple
+
+Exposed-Modules:    HKPreludeo,
+                    HK
+GHC-Options:        -O2 -Wall
