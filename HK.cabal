@@ -4,6 +4,8 @@ Description:        Implementation of the Kanren programming language in
                     Haskell, utilizing monadic computations to control
                     backtracking with fair disjunction.
 Synopsis:           Implementation of the Kanren logic system.
+License:            BSD3
+License-file:       LICENSE
 Author:             Carlo Angiuli, Adam Foltzer, and Jaimie Murdock
 Maintainer:         Jaimie Murdock
 Homepage:           http://github.com/JaimieMurdock/HK
