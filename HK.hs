@@ -1,5 +1,4 @@
-{-# OPTIONS -fglasgow-exts #-}
-{-# LANGUAGE OverlappingInstances, IncoherentInstances #-}
+{-# LANGUAGE FlexibleInstances #-}
 
 -- |Module HK defines the HaskellKanren language, which is an implementation of
 -- the specification in chapters 9 and 10 of The Reasoned Schemer (Friedman, Byrd,
