@@ -1,9 +1,9 @@
 {-# LANGUAGE FlexibleInstances #-}
 
--- |Module HK defines the HaskellKanren language, which is an implementation of
--- the specification in chapters 9 and 10 of The Reasoned Schemer (Friedman, Byrd,
--- and Kiselyov, 2005).
-module HK where
+-- |Module HK defines the HaskellKanren language, which is an
+-- implementation of the specification in chapters 9 and 10 of The
+-- Reasoned Schemer (Friedman, Byrd, and Kiselyov, 2005).
+module Language.HK where
 
 import Prelude hiding (fail)
 import Control.Monad hiding (fail)
@@ -13,8 +13,8 @@ import Data.Maybe
 
 type Id = Integer
 
--- | The Val type allows us to pass along variables of any type within the logic
--- system, without respect to the internal type.
+-- | The Val type allows us to pass along variables of any type within
+-- the logic system, without respect to the internal type.
 data Val = Var Id
          | String String
          | Integer Integer

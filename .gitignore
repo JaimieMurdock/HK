@@ -1,2 +1,5 @@
 *.o
+*~
+cabal-dev
 dist
+

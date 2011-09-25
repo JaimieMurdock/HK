@@ -8,13 +8,17 @@ License:            BSD3
 License-file:       LICENSE
 Author:             Carlo Angiuli, Adam Foltzer, and Jaimie Murdock
 Maintainer:         Jaimie Murdock
-Homepage:           http://github.com/JaimieMurdock/HK
-
+Homepage:           https://github.com/JaimieMurdock/HK
+Bug-reports:        https://github.com/JaimieMurdock/HK/issues
 Stability:          Experimental
 Tested-With:        GHC
-Build-Depends:      base >= 2, logict >= 0.5.0
 Build-Type:         Simple
+Cabal-version:      >=1.8
+extra-source-files: README.rst, test/HKTests.hs
 
-Exposed-Modules:    HKPreludeo,
-                    HK
-GHC-Options:        -O2 -Wall
+Library
+  Exposed-Modules:  Language.HK, Language.HK.Prelude
+  Hs-source-dirs:   src
+  Build-Depends:    base >= 2, 
+                    logict == 0.5.*
+  GHC-Options:      -O2 -Wall

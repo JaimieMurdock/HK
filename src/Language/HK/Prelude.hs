@@ -1,18 +1,32 @@
-module HKPreludeo(module HK, elemo, appendo) where
+module Language.HK.Prelude (
+    module Language.HK
+  , elemo
+  , appendo
+  ) where
 
-import HK hiding (and2, or2, unify, emptyS, extendS, walk, reify, Subst, State)
+import Language.HK hiding (
+    and2
+  , or2
+  , unify
+  , emptyS
+  , extendS
+  , walk
+  , reify
+  , Subst
+  , State
+  )
 
 -------------------------------------------------------------------------------
--- Preludeo
+-- Prelude
 -------------------------------------------------------------------------------
 
--- | @elemo@ forms one half of the HKPrelude, simply giving a predicate for
--- testing list membership.
+-- | @elemo@ relates a value to a list if and only if that value is an
+-- element of that list.
 elemo x xs = or' [first x xs,
                   exist (\d -> and' [second d xs, elemo x d])]
 
--- | @appendo@ is the other half of the HKPrelude, allowing for list construction 
--- in a logic program.
+-- | @appendo@ relates two lists to the result of appending those
+-- lists.
 appendo :: Val  -- ^ starting list
         -> Val  -- ^ value to append
         -> Val  -- ^ ending list
