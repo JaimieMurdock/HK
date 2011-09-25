@@ -8,11 +8,11 @@ Jaimie Murdock.
 
 Files
 --------
-HK.hs
+src/Language/HK.hs
     Defines the HaskellKanren Language
-HKPreludeo.hs   
+src/Language/HK/Prelude.hs   
     Defines an environment for using HaskellKanren
-HKTests.hs      
+test/HKTests.hs      
     Defines a suite of test cases
 Examples.hs
     Collection of examples using HKPreludeo

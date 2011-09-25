@@ -1,8 +1,8 @@
 module HKTests where
 
 import Prelude hiding (fail)
-import HK
-import HKPreludeo
+import Language.HK
+import Language.HK.Prelude
 -------------------------------------------------------------------------------
 -- Tests
 -------------------------------------------------------------------------------
